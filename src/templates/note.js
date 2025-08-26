@@ -29,9 +29,7 @@ const NotePostTemplate = ({
   return (
     <Layout location={location}>
       <SEO title={title} description={description || note.excerpt} />
-      <h1>
-        <span style={{ ...scale(1 / 2) }}>[{date}]</span> {title}
-      </h1>
+      <h1>{title}</h1>
       <ContentSection>
         <MDXRenderer>{note.body}</MDXRenderer>
       </ContentSection>
