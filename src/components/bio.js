@@ -34,7 +34,7 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5)
+        marginBottom: rhythm(2.5),
       }}
     >
       <Image
@@ -44,10 +44,10 @@ const Bio = () => {
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
           minWidth: 50,
-          borderRadius: `100%`
+          borderRadius: `100%`,
         }}
         imgStyle={{
-          borderRadius: `50%`
+          borderRadius: `50%`,
         }}
       />
       <p>

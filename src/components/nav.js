@@ -39,7 +39,7 @@ const Nav = ({ children, menuLinks }) => (
   <NavWrapper>
     {children}
     <List>
-      {menuLinks.map(link => (
+      {menuLinks.map((link) => (
         <NavItem key={link.name}>
           <NavLink to={link.link} activeClassName="current-page">
             {link.name}

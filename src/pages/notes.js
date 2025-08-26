@@ -46,8 +46,8 @@ const Notes = ({ location, data }) => {
           ({
             node: {
               fields: { slug },
-              frontmatter: { title, date }
-            }
+              frontmatter: { title, date },
+            },
           }) => (
             <article key={slug}>
               <header>

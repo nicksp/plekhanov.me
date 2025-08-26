@@ -19,7 +19,7 @@ const ContentSection = styled('section')`
 const NotePostTemplate = ({
   data,
   pageContext: { previous, next },
-  location
+  location,
 }) => {
   const { mdx } = data
   const note = mdx
@@ -40,7 +40,7 @@ const NotePostTemplate = ({
 
       <hr
         style={{
-          marginBottom: rhythm(1)
+          marginBottom: rhythm(1),
         }}
       />
 

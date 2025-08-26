@@ -16,10 +16,10 @@ const customTheme = {
   headerWeight: 700,
   overrideThemeStyles: ({ rhythm }) => ({
     'a.gatsby-resp-image-link': {
-      boxShadow: 'none'
+      boxShadow: 'none',
     },
     h1: {
-      marginTop: '0.5rem'
+      marginTop: '0.5rem',
     },
     a: {
       background: 'linear-gradient(to bottom, #ff9800 0%, #ff9800 100%)',
@@ -28,7 +28,7 @@ const customTheme = {
       backgroundSize: '3px 3px',
       color: '#000',
       textDecoration: 'none',
-      paddingBottom: '.25em'
+      paddingBottom: '.25em',
     },
     'a:hover, a:active': {
       color: '#b1055b',
@@ -36,18 +36,18 @@ const customTheme = {
       backgroundPosition: '0 100%',
       backgroundSize: 'auto 6px',
       backgroundRepeat: 'repeat-x',
-      textDecoration: 'none'
+      textDecoration: 'none',
     },
     'p code': {
-      fontSize: '.8rem'
+      fontSize: '.8rem',
     },
     'h1 code, h2 code, h3 code, h4 code, h5 code, h6 code': {
-      fontSize: 'inherit'
+      fontSize: 'inherit',
     },
     'li code': {
-      fontSize: '.8rem'
-    }
-  })
+      fontSize: '.8rem',
+    },
+  }),
 }
 
 const typography = new Typography(customTheme)

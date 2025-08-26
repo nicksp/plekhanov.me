@@ -52,8 +52,8 @@ class Blog extends Component {
               node: {
                 excerpt,
                 frontmatter: { title, date, description },
-                fields: { slug }
-              }
+                fields: { slug },
+              },
             }) => {
               const postTitle = title || slug
               return (
@@ -65,7 +65,7 @@ class Blog extends Component {
                     <DateMeta>{date}</DateMeta>
                     <p
                       dangerouslySetInnerHTML={{
-                        __html: description || excerpt
+                        __html: description || excerpt,
                       }}
                     />
                   </header>
