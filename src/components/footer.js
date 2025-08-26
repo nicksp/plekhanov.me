@@ -24,6 +24,14 @@ class Footer extends Component {
           rel="noopener noreferrer"
         >
           linkedin
+        </a>{' '}
+        &bull;{' '}
+        <a
+          href="https://bsky.app/profile/plekhanov.me"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          bluesky
         </a>
         {''}
       </footer>

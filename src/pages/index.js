@@ -123,7 +123,7 @@ const IndexPage = ({ location }) => {
 
           <p>
             I'm a seasoned fullstack developer who specializes in Node.js
-            services and React applications.
+            services and Next.js applications.
           </p>
           <p>
             This is my digital place to talk about software engineering, and
