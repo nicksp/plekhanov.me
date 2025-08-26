@@ -1,45 +1,45 @@
 module.exports = {
   siteMetadata: {
-    title: 'Nick Khan',
-    author: 'Nick Khan',
+    title: 'Nick Plekhanov',
+    author: 'Nick Plekhanov',
     description:
       'Nick Plekhanov is a seasoned fullstack developer, entrepreneur and passionate photographer making the web an awesome place.',
     lang: 'en',
     menuLinks: [
       {
         name: 'Home',
-        link: '/'
+        link: '/',
       },
       {
         name: 'Blog',
-        link: '/blog/'
+        link: '/blog/',
       },
       {
         name: 'Notes',
-        link: '/notes'
-      }
-    ]
+        link: '/notes',
+      },
+    ],
   },
   plugins: [
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-157548736-1',
-        head: true
-      }
+        head: true,
+      },
     },
-    ...['blog', 'notes', 'assets'].map(type => ({
+    ...['blog', 'notes', 'assets'].map((type) => ({
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/${type}`,
-        name: type
-      }
+        name: type,
+      },
     })),
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
         defaultLayouts: {
-          default: require.resolve('./src/components/layout.js')
+          default: require.resolve('./src/components/layout.js'),
         },
         extensions: ['.mdx', '.md', '.markdown'],
         gatsbyRemarkPlugins: [
@@ -47,14 +47,14 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               backgroundColor: '#fafafa',
-              maxWidth: 690
-            }
+              maxWidth: 690,
+            },
           },
           'gatsby-remark-embedder',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-prismjs'
-        ]
-      }
+          'gatsby-remark-prismjs',
+        ],
+      },
     },
     {
       resolve: 'gatsby-transformer-remark',
@@ -63,20 +63,20 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 590
-            }
+              maxWidth: 590,
+            },
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem'
-            }
+              wrapperStyle: 'margin-bottom: 1.0725rem',
+            },
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants'
-        ]
-      }
+          'gatsby-remark-smartypants',
+        ],
+      },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -84,23 +84,23 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Nick Personal Website',
+        name: `Nick Plekhanov's personal website`,
         short_name: 'nicksp',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'content/assets/nikkhan-icon.png'
-      }
+        icon: 'content/assets/plekhanov-icon.png',
+      },
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: 'src/utils/typography'
-      }
+        pathToConfigModule: 'src/utils/typography',
+      },
     },
-    'gatsby-plugin-emotion'
-  ]
+    'gatsby-plugin-emotion',
+  ],
 }

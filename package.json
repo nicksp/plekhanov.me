@@ -1,15 +1,15 @@
 {
-  "name": "nikkhan.com",
+  "name": "plekhanov",
   "private": true,
   "description": "The code for Nick's personal website",
   "version": "0.1.0",
-  "author": "Nick S. Plekhanov <nick.plekhanov@gmail.com> (https://nikkhan.com)",
+  "author": "Nick Plekhanov (https://plekhanov.me)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicksp/nikkhan.com"
+    "url": "https://github.com/nicksp/plekhanov.me"
   },
   "bugs": {
-    "url": "https://github.com/nicksp/nikkhan.com/issues"
+    "url": "https://github.com/nicksp/plekhanov.me/issues"
   },
   "keywords": [
     "gatsby",
@@ -18,7 +18,7 @@
     "blog"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/nicksp/nikkhan.com#readme",
+  "homepage": "https://github.com/nicksp/plekhanov.me#readme",
   "scripts": {
     "start": "npm run develop",
     "build": "gatsby build",
@@ -63,7 +63,6 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.4.4",
-    "hyvor-talk-react": "^1.0.1",
     "prism-themes": "^1.4.0",
     "prismjs": "^1.20.0",
     "prop-types": "^15.7.2",

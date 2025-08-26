@@ -41,7 +41,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
   const componentMap = {
     blog: path.resolve(`./src/templates/post.js`),
-    notes: path.resolve(`./src/templates/note.js`)
+    notes: path.resolve(`./src/templates/note.js`),
   }
 
   // Split into different lists for easier filtering
@@ -49,7 +49,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   const blogs = []
   const others = []
 
-  posts.forEach(post => {
+  posts.forEach((post) => {
     switch (post.node.fields.type) {
       case 'notes':
         return notes.push(post)
@@ -73,8 +73,8 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         context: {
           slug,
           previous,
-          next
-        }
+          next,
+        },
       })
     }
   }
@@ -89,20 +89,20 @@ exports.onCreateNode = ({ node, actions: { createNodeField }, getNode }) => {
     createNodeField({
       name: 'slug',
       node,
-      value: `${postType}${value}`
+      value: `${postType}${value}`,
     })
 
     const parsedPostPath = node.fileAbsolutePath.replace(__dirname, '')
     createNodeField({
       name: 'editLink',
       node,
-      value: `https://github.com/nicksp/nikkhan.com/edit/master${parsedPostPath}`
+      value: `https://github.com/nicksp/plekhanov.me/edit/master${parsedPostPath}`,
     })
 
     createNodeField({
       name: 'type',
       node,
-      value: postType
+      value: postType,
     })
   }
 }

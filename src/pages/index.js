@@ -103,15 +103,12 @@ const IndexPage = ({ location }) => {
           `architecture`,
           `code design`,
           `productivity`,
-          `business`
+          `business`,
         ]}
       />
       <Wrapper>
         <ImageSection>
-          <Portrait
-            alt="Nick S. Plekhanov"
-            fluid={avatar.childImageSharp.fluid}
-          />
+          <Portrait alt="Nick Plekhanov" fluid={avatar.childImageSharp.fluid} />
         </ImageSection>
 
         <InfoSection>

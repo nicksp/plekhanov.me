@@ -41,7 +41,7 @@ const Layout = ({ children, location }) => {
         >
           ...
         </span>
-        {new Date().getFullYear()} Nick S. Plekhanov
+        {new Date().getFullYear()} Nick Plekhanov
       </Footer>
     </Wrapper>
   )
