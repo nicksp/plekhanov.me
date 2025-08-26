@@ -29,7 +29,7 @@ const NavLink = styled(Link)`
   text-decoration: none;
 
   &.current-page {
-    background-image: linear-gradient(to bottom, #ff9800 0%, #ff9800 100%);
+    background-image: linear-gradient(to bottom, #9ec6df 0%, #9ec6df 100%);
     background-size: 4px 50px;
     color: #fff;
   }

@@ -18,8 +18,8 @@ const PostLink = styled(Link)`
   line-height: 1.5;
   background-image: linear-gradient(
     to right,
-    #ffbf00a6 70%,
-    #ffbf00a6 0px
+    #9ec6dfa6 70%,
+    #9ec6dfa6 0px
   ) !important;
   background-size: 4px 13px !important;
   background-position: 0 98%;

@@ -17,9 +17,9 @@ const NavLink = styled(Link)`
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   &:hover {
-    color: #ff9800;
+    color: #9ec6df;
     background: none;
-    border-color: rgba(255, 152, 0, 0.15);
+    border-color: rgba(158, 198, 223, 0.15);
   }
 `
 
