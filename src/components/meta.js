@@ -22,16 +22,34 @@ const PostMetaSeparator = styled('span')`
   margin-right: 4px;
 `
 
-const Meta = ({ editLink, postDate }) => (
-  <PostMeta>
-    <PostMetaLink target="_blank" rel="noopener noreferrer" href={editLink}>
-      Edit on Github
-    </PostMetaLink>
+const Meta = ({ editLink, postDate }) => {
+  // Format date as "3 Aug, 2025"
+  const formattedDate = new Date(postDate)
+    .toLocaleDateString('en-US', {
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric',
+    })
+    .replace(/ (\w+) (\d{4})$/, ' $1, $2')
 
-    <PostMetaSeparator>{` • `}</PostMetaSeparator>
-
-    <span>Published on {postDate}</span>
-  </PostMeta>
-)
+  return (
+    <PostMeta>
+      Spread the word on{' '}
+      <PostMetaLink
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://bsky.app/profile/plekhanov.me"
+      >
+        Bluesky
+      </PostMetaLink>
+      <PostMetaSeparator>{` • `}</PostMetaSeparator>
+      <PostMetaLink target="_blank" rel="noopener noreferrer" href={editLink}>
+        Edit on Github
+      </PostMetaLink>
+      <PostMetaSeparator>{` • `}</PostMetaSeparator>
+      <span>Published on {formattedDate}</span>
+    </PostMeta>
+  )
+}
 
 export default Meta

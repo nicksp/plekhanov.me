@@ -94,7 +94,7 @@ const IndexPage = ({ location }) => {
   return (
     <Layout location={location}>
       <SEO
-        title="Full Stack Developer"
+        title="Nick Plekhanov"
         keywords={[
           `personal`,
           `node.js`,

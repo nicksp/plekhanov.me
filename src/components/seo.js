@@ -6,6 +6,7 @@ import useSiteMetadata from '../hooks/use-site-metadata'
 function SEO({ description, lang, meta, keywords, title }) {
   const siteMetadata = useSiteMetadata()
   const metaDescription = description || siteMetadata.description
+  const isHome = title === siteMetadata.title
 
   return (
     <Helmet
@@ -13,7 +14,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s — ${siteMetadata.title}`}
+      titleTemplate={isHome ? undefined : `%s — ${siteMetadata.title}`}
       meta={[
         {
           name: 'description',
