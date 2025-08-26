@@ -90,7 +90,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'content/assets/plekhanov-icon.png',
+        icon: 'content/assets/favicon.png',
       },
     },
     'gatsby-plugin-offline',
