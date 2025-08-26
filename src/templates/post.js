@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
-import HyvorTalk from 'hyvor-talk-react'
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
 
 import Bio from '../components/bio'
@@ -35,7 +34,7 @@ class BlogPostTemplate extends Component {
             <h1
               style={{
                 marginTop: rhythm(1),
-                marginBottom: rhythm(1)
+                marginBottom: rhythm(1),
               }}
             >
               {title}
@@ -48,13 +47,9 @@ class BlogPostTemplate extends Component {
 
           <Meta postDate={date} editLink={editLink} />
 
-          {process.env.NODE_ENV === 'production' && (
-            <HyvorTalk.Embed websiteId={206} id={slug} loadMode="scroll" />
-          )}
-
           <hr
             style={{
-              marginBottom: rhythm(1)
+              marginBottom: rhythm(1),
             }}
           />
           <footer>
