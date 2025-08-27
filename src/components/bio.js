@@ -30,6 +30,8 @@ const Bio = () => {
   `)
 
   const { author } = data.site.siteMetadata
+  const [firstName] = author.split(' ')
+
   return (
     <div
       style={{
@@ -51,7 +53,7 @@ const Bio = () => {
         }}
       />
       <p>
-        <strong>{author}</strong> is a JavaScript software engineer building
+        <strong>{firstName}</strong> is a JavaScript software engineer building
         useful things.
       </p>
     </div>

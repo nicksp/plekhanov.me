@@ -4,15 +4,20 @@ import { Link } from 'gatsby'
 
 const NavWrapper = styled('nav')`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.75rem;
 `
 
 const List = styled('ul')`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.1rem;
 `
 
 const NavItem = styled('li')`
@@ -20,18 +25,29 @@ const NavItem = styled('li')`
 `
 
 const NavLink = styled(Link)`
-  color: #222;
-  font-size: 1rem;
-  font-weight: normal;
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: 500;
   line-height: 1;
-  margin: 0 0.5rem 0 0;
-  padding: 0.25rem;
+  margin: 0 0.1rem 0 0;
+  padding: 0.35rem 0.75rem;
   text-decoration: none;
+  background: none !important;
+  border-radius: 0;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  &:hover {
+    color: #9ec6df;
+    background: none !important;
+  }
 
   &.current-page {
-    background-image: linear-gradient(to bottom, #9ec6df 0%, #9ec6df 100%);
-    background-size: 4px 50px;
-    color: #fff;
+    background: none !important;
+    color: #9ec6df;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(158, 198, 223, 0.4);
   }
 `
 

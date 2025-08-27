@@ -29,22 +29,47 @@ const Header = ({ location }) => {
       `}
     >
       <Nav menuLinks={menuLinks}>
-        <h3
-          css={css`
-            margin-top: 0;
-          `}
-        >
-          <Link
+        {location.pathname !== rootPath ? (
+          <h3
             css={css`
-              box-shadow: none;
-              text-decoration: none;
-              color: inherit;
+              margin: 0;
+              line-height: 1;
+              display: flex;
+              align-items: center;
             `}
-            to="/"
           >
-            {location.pathname !== rootPath && title}
-          </Link>
-        </h3>
+            <Link
+              css={css`
+                box-shadow: none;
+                text-decoration: none;
+                color: #222;
+                background: none !important;
+                padding-bottom: 0 !important;
+                font-weight: 800;
+                letter-spacing: -1px;
+                font-size: 1.8rem;
+                position: relative;
+                transition: color 0.2s ease;
+                line-height: 1.1;
+                display: block;
+                text-align: center;
+
+                &:hover {
+                  color: var(--pastel-purple);
+                }
+              `}
+              to="/"
+            >
+              {title}
+            </Link>
+          </h3>
+        ) : (
+          <div
+            css={css`
+              height: 1.8rem;
+            `}
+          />
+        )}
       </Nav>
     </header>
   )

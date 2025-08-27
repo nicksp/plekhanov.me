@@ -27,4 +27,4 @@ If you find any typos or you have any comments on the posts or notes, please fee
 
 ## 🧔 Author
 
-- [Nick Plekhanov](https://plekhanov.me)
+[Nick Plekhanov](https://plekhanov.me)

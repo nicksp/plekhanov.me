@@ -44,22 +44,24 @@ class Blog extends Component {
 
     return (
       <Layout location={this.props.location}>
-        <SEO title="Posts" />
-        <Bio />
-        <div style={{ margin: '20px 0 40px' }}>
+        <SEO title="Blog" />
+        <div style={{ margin: '0 0 40px' }}>
           {posts.map(
-            ({
-              node: {
-                excerpt,
-                frontmatter: { title, date, description },
-                fields: { slug },
+            (
+              {
+                node: {
+                  excerpt,
+                  frontmatter: { title, date, description },
+                  fields: { slug },
+                },
               },
-            }) => {
+              index
+            ) => {
               const postTitle = title || slug
               return (
                 <article key={slug}>
                   <header>
-                    <PostTitle>
+                    <PostTitle style={index === 0 ? { marginTop: 0 } : {}}>
                       <PostLink to={slug}>{postTitle}</PostLink>
                     </PostTitle>
                     <DateMeta>{date}</DateMeta>

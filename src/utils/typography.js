@@ -28,7 +28,7 @@ const customTheme = {
       backgroundSize: '3px 3px',
       color: '#000',
       textDecoration: 'none',
-      paddingBottom: '.25em',
+      paddingBottom: '.15em',
     },
     'a:hover, a:active': {
       color: '#6F90A6',
