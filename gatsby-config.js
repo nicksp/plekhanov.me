@@ -80,15 +80,14 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    // 'gatsby-plugin-feed',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: `Nick Plekhanov's personal website`,
         short_name: 'nicksp',
         start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#663399',
+        background_color: '#fff',
+        theme_color: '#fff',
         display: 'minimal-ui',
         icon: 'content/assets/favicon.png',
       },
