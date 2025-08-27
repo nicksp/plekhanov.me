@@ -8,7 +8,7 @@ import Layout from '../components/layout'
 import Navigation from '../components/navigation'
 import SEO from '../components/seo'
 
-import { rhythm, scale } from '../utils/typography'
+import { rhythm } from '../utils/typography'
 
 const ContentSection = styled('section')`
   a {

@@ -23,7 +23,7 @@ class BlogPostTemplate extends Component {
     const { mdx } = data
     const { previous, next } = pageContext
     const post = mdx
-    const { editLink, type, slug } = post.fields
+    const { editLink, type } = post.fields
     const { title, date, description } = post.frontmatter
 
     return (
