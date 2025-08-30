@@ -22,10 +22,9 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-goatcounter`,
       options: {
-        trackingId: 'UA-157548736-1',
-        head: true,
+        code: 'plekhanov',
       },
     },
     ...['blog', 'notes', 'assets'].map((type) => ({
